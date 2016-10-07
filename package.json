@@ -1,6 +1,6 @@
 {
   "name": "@samg/npm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "first npm download",
   "main": "index.js",
   "scripts": {
