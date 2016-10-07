@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.5.0/bin/npm',
+1 verbose cli   'dist-tag',
+1 verbose cli   'add',
+1 verbose cli   'package.json@1.0.3',
+1 verbose cli   '[1.0.3]' ]
+2 info using npm@3.10.8
+3 info using node@v4.5.0
+4 verbose dist-tag add [1.0.3] to package.json@1.0.3
+5 silly mapToRegistry name package.json
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry http://localhost:15443/
+8 silly mapToRegistry data Result {
+8 silly mapToRegistry   raw: 'package.json',
+8 silly mapToRegistry   scope: null,
+8 silly mapToRegistry   escapedName: 'package.json',
+8 silly mapToRegistry   name: 'package.json',
+8 silly mapToRegistry   rawSpec: '',
+8 silly mapToRegistry   spec: 'latest',
+8 silly mapToRegistry   type: 'tag' }
+9 silly mapToRegistry uri http://localhost:15443/package.json
+10 verbose request uri http://localhost:15443/-/package/package.json/dist-tags
+11 verbose request no auth needed
+12 info attempt registry request try #1 at 10:47:40 AM
+13 verbose request id 2790b5a3a396a706
+14 http request GET http://localhost:15443/-/package/package.json/dist-tags
+15 http 404 http://localhost:15443/-/package/package.json/dist-tags
+16 verbose headers { 'content-type': 'application/json',
+16 verbose headers   date: 'Fri, 07 Oct 2016 10:47:40 GMT',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'content-length': '19' }
+17 verbose stack Error: missing : -/package/package.json/dist-tags
+17 verbose stack     at makeError (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+17 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+17 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+17 verbose stack     at Request.self.callback (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+17 verbose stack     at emitTwo (events.js:87:13)
+17 verbose stack     at Request.emit (events.js:172:7)
+17 verbose stack     at Request.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+17 verbose stack     at emitOne (events.js:77:13)
+17 verbose stack     at Request.emit (events.js:169:7)
+17 verbose stack     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/request/request.js:965:12)
+18 verbose statusCode 404
+19 verbose cwd /home/ubuntu/workspace/npm
+20 error Linux 4.2.0-c9
+21 error argv "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node" "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/npm" "dist-tag" "add" "package.json@1.0.3" "[1.0.3]"
+22 error node v4.5.0
+23 error npm  v3.10.8
+24 error code E404
+25 error 404 missing : -/package/package.json/dist-tags
+26 verbose exit [ 1, true ]
